@@ -1,0 +1,9 @@
+INITSTACK A
+CURRENTSTACK A
+PRINT "ENTER OPERATION \n"
+PRINT "1 for ADD \n2 for SUB \n3 for MUL\n4 for DIV\n" 
+PRINT "--------------->"
+READ 
+TOP
+8=D
+HALT
