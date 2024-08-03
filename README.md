@@ -1,4 +1,4 @@
-
+![image](https://github.com/user-attachments/assets/a3826ba5-1a30-4816-aa79-a4a105bc99a2)
 # Overview
 This programming language is based on a stack-based push-down automaton. It includes commands for stack manipulation, arithmetic operations, control flow, and more.
 ## HOW to RUN 
