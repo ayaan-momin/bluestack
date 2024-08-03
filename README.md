@@ -1,8 +1,12 @@
-![image](https://github.com/user-attachments/assets/a3826ba5-1a30-4816-aa79-a4a105bc99a2)
+![image](https://github.com/user-attachments/assets/937876a1-698d-4dbb-8664-a8590b3b7f66)
 # Overview
 This programming language is based on a stack-based push-down automaton. It includes commands for stack manipulation, arithmetic operations, control flow, and more.
 ## HOW to RUN 
-compile c code duh 
+compile interpreter.c
+``cd "c:\Users\path\to\sourcecode" ; if ($?) { gcc interpreter.c -o interpreter } ; if ($?) { .\interpreter }``
+then use the shell
+try
+``:->RUN example.blu``
 ## Commands
 
 ### Stack Operations
