@@ -1,7 +1,7 @@
 
-## Overview
+# Overview
 This programming language is based on a stack-based push-down automaton. It includes commands for stack manipulation, arithmetic operations, control flow, and more.
-# HOW to RUN 
+## HOW to RUN 
 compile c code duh 
 ## Commands
 
