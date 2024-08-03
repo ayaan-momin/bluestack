@@ -1,0 +1,15 @@
+PRINT "enter a number : "
+READ
+JUMP.=0 L1
+
+LOOP:
+PUSH 2
+SUB
+JUMP.=0 L1
+JUMP.>0 LOOP
+PRINT "odd\n"
+HALT
+
+L1:
+PRINT "even\n"
+HALT

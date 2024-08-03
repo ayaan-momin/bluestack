@@ -1,8 +1,11 @@
 INITSTACK while
 CURRENTSTACK while
+PRINT "echo fibonacci series upto ? : "
 READ
 PUSH 2
 SUB
+
+
 CURRENTSTACK main
 PUSH 0
 TOP
@@ -10,18 +13,20 @@ PUSH 1
 TOP
 JUMP LOOP
 HALT
-8=D
+
+L:
+CURRENTSTACK main
+JUMP LOOP
+
 LOOP:
 DUP2
 ADD 
-DUP
 TOP
 CURRENTSTACK while
 PUSH 1
 SUB
-JUMP.>0 LOOP
+JUMP.>0 L
 JUMP.=0 end
 CURRENTSTACK main
-JUMP.<0 L
-end:
+end;
 HALT

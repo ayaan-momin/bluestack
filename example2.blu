@@ -1,0 +1,69 @@
+start:
+PRINT "ENTER OPERATION \n"
+PRINT "1 for ADD \n2 for SUB \n3 for MUL\n4 for DIV\n5 for END\n" 
+PRINT "--------------->"
+READ 
+
+PUSH 1
+SUB 
+JUMP.=0 sum
+PUSH 1
+SUB 
+JUMP.=0 sub
+PUSH 1
+SUB 
+JUMP.=0 mul
+PUSH 1
+SUB 
+JUMP.=0 div 
+PUSH 1
+SUB 
+JUMP.=0 end
+
+sum:
+PRINT "Enter first number:"
+READ
+PRINT "Enter second number:"
+READ
+ADD
+PRINT "sum = "
+TOP
+FLUSH
+JUMP start
+
+sub:
+PRINT "Enter first number:"
+READ
+PRINT "Enter second number:"
+READ
+SUB
+PRINT "dif = "
+TOP
+FLUSH
+JUMP start
+
+mul:
+PRINT "Enter first number:"
+READ
+PRINT "Enter second number:"
+READ
+MUL
+PRINT "pro = "
+TOP
+FLUSH
+JUMP start
+
+div:
+PRINT "Enter first number:"
+READ
+PRINT "Enter second number:"
+READ
+DIV
+PRINT "que = "
+TOP
+FLUSH
+JUMP start
+
+end:
+FLUSH
+HALT
