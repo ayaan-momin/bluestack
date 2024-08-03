@@ -1,0 +1,69 @@
+Programming Language Help
+
+Overview:
+A stack-based language with commands for stack manipulation, arithmetic, and control flow.
+
+Commands:
+
+Shell Commands:
+- CLS                          # Clears the screen
+- RUN <./file/path/name>       # Exicutes the Program written in the file
+- EXIT                         # Close shell
+- HELP                         # Shows this message
+
+Stack Operations:
+- INITSTACK <stack_name>       # Initialize a new stack
+- CURRENTSTACK <stack_name>    # Set current stack
+- PUSH <number>                # Push a number onto the current stack
+- POP                          # Pop the top value from the current stack
+- TOP                          # Print the top value of the current stack
+- SWAP                         # Swap the top two values of the current stack
+- DUP                          # Duplicate the top value of the current stack
+- DUP2                         # Duplicate the top two values of the current stack
+- COPY <from_stack_name>       # Copy top value from specified stack to current stack
+- DELETESTACK <stack_name>     # Delete the specified stack
+- FLUSH                        # Clear the current stack
+- 8=D                          # Print all stacks and their contents
+
+Arithmetic Operations:
+- ADD                          # Add top two values
+- SUB                          # Subtract top two values
+- MUL                          # Multiply top two values
+- DIV                          # Divide top two values (checks for divide by zero)
+- MOD                          # Modulus of top two values (checks for divide by zero)
+
+Control Flow:
+- JUMP <label>                 # Jump to the specified label
+- JUMP.=0 <label>              # Jump if top value is zero
+- JUMP.>0 <label>              # Jump if top value is greater than zero
+- JUMP.<0 <label>              # Jump if top value is less than zero
+- HALT                         # Stop program execution
+
+I/O Operations:
+- PRINT <message>              # Print a message
+- READ                         # Read an integer and push to stack
+
+Example Programs:
+
+Hello World:
+PRINT Hello, World!
+HALT
+
+Simple Addition:
+PUSH 10
+PUSH 20
+ADD
+TOP
+HALT
+
+Using Stacks:
+PUSH 3
+INITSTACK stack1
+CURRENTSTACK stack1
+PUSH 5
+COPY main
+TOP
+HALT
+
+License:
+Provided under deez nuts do whatever the flip u want with this code.
