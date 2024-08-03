@@ -4,11 +4,10 @@ This programming language is based on a stack-based push-down automaton. It incl
 ## HOW to RUN 
 
 - compile interpreter.c
-``cd "c:\Users\path\to\sourcecode" ; if ($?) { gcc interpreter.c -o interpreter } ; if ($?) { .\interpreter }`` 
+ ``cd "c:\Users\path\to\sourcecode" ; if ($?) { gcc interpreter.c -o interpreter } ; if ($?) { .\interpreter }`` 
 
-- then use the shell
-- try
-- ``:->RUN example.blu``
+- then use the shell and try
+  ``:->RUN example.blu``
 
 ## Commands
 
