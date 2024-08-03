@@ -80,27 +80,6 @@ PRINT "Hello, World!"
 HALT
 ```
 
-# Error Handling
-
-- **Stack Overflow**: Error when trying to push onto a full stack.
-- **Stack Underflow**: Error when trying to pop from an empty stack.
-- **Invalid Stack Index**: Error when accessing a non-existent stack.
-- **Divide by Zero**: Error when performing a division or modulus operation with zero.
-
-# Built-in Functions
-
-- **create_stack**: Creates a new stack.
-- **find_stack_by_name**: Finds a stack by name.
-- **set_current_stack**: Sets the current stack.
-- **push**: Pushes a value onto the current stack.
-- **pop**: Pops a value from the current stack.
-- **top**: Retrieves the top value of the current stack.
-- **copy_stack**: Copies a value from one stack to another.
-- **delete_stack**: Deletes a specified stack.
-- **get_label_address**: Gets the address of a label in the program.
-- **interpret**: Interprets and executes the program.
-
-
 
 # License
 no license ..uhh.. do whatever u want
