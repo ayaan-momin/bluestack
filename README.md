@@ -8,7 +8,8 @@ This programming language is based on a stack-based push-down automaton. It incl
 
 - then use the shell and try
   ``:->RUN example.blu``
-![image](https://github.com/user-attachments/assets/6c829b77-404a-445e-ac63-c201b2bf0cf7)
+  
+- ![image](https://github.com/user-attachments/assets/6c829b77-404a-445e-ac63-c201b2bf0cf7)
 
 ## Commands
 
