@@ -7,7 +7,7 @@ This programming language is based on a stack-based push-down automaton. It incl
  - download the source code and run :
  ``cd "c:\Users\path\to\sourcecode" ; if ($?) { gcc interpreter.c -o interpreter } ; if ($?) { .\interpreter }``
 
--OR if u have git
+- OR if u have git
 
  - ``git clone https://github.com/ayaan-momin/bluestack.git``
  - ``cd bluestack``
