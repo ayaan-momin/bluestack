@@ -14,7 +14,7 @@ This programming language is based on a stack-based push-down automaton. It incl
   - ``cd bluestack``
   - ``if ($?) { gcc interpreter.c -o interpreter } ; if ($?) { .\interpreter }``
 
-- then try running example.blu in she or type ``HELP``
+- then try running example.blu in she or type ``:->HELP``,
   ``:->RUN example.blu``
 
 - ![image](https://github.com/user-attachments/assets/d7b7756e-f880-4d7c-9d88-7647e7b69641)
