@@ -410,7 +410,7 @@ int main() {
     printf("version-0.0.1                           \\_\\ \n\n");
 
     while (1) {
-        printf(":-> ");
+        printf("\033[34;1m:->\033[0m");
         if (fgets(input, sizeof(input), stdin) == NULL) {
             break;
         }
