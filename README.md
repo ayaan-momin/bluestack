@@ -4,11 +4,17 @@ This programming language is based on a stack-based push-down automaton. It incl
 ## HOW to RUN 
 
 - compile interpreter.c
+ - download the source code and run :
  ``cd "c:\Users\path\to\sourcecode" ; if ($?) { gcc interpreter.c -o interpreter } ; if ($?) { .\interpreter }`` 
+-OR if u have git
+- ``git clone https://github.com/ayaan-momin/bluestack.git``
+- ``cd bluestack``
+- ``if ($?) { gcc interpreter.c -o interpreter } ; if ($?) { .\interpreter }``
 
-- then use the shell and try
+- then try running example.blu in she or type ``HELP``
   ``:->RUN example.blu``
 
+- ![image](https://github.com/user-attachments/assets/d7b7756e-f880-4d7c-9d88-7647e7b69641)
 
 
 ## Commands
