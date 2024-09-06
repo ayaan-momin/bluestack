@@ -216,6 +216,7 @@ void interpret(char* program[], int program_size, char* labels[], int label_addr
             push(sm, a);
         } else if (strcmp(opcode, "PRINT") == 0) {
             char* str = program[pc++];
+            printf("\033[34;1m"); 
             for (char* p = str; *p != '\0'; p++) {
                 if (*p == '\\' && *(p + 1) == 'n') {
                     putchar('\n');
@@ -228,7 +229,7 @@ void interpret(char* program[], int program_size, char* labels[], int label_addr
                 }
             }
         } else if (strcmp(opcode, "TOP") == 0) {
-            printf("%d\n", top(sm));
+            printf("\033[32;1m%d\n", top(sm));
 
         } else if (strcmp(opcode, "READ") == 0) {
             int number;
@@ -308,17 +309,16 @@ void interpret(char* program[], int program_size, char* labels[], int label_addr
             current_stack->sp = -1;
         } else if (strcmp(opcode, "8=D") == 0) {
             for (int i = 0; i < sm->stack_count; i++) {
-                printf("Stack %s: \n", sm->stacks[i].name);
+                printf("\033[36;1mStack %s: \n", sm->stacks[i].name);
                 for (int j = 0; j <= sm->stacks[i].sp; j++) {
                     printf("[_%d_]\n", sm->stacks[i].buf[(sm->stacks[i].sp)-j]);
                 }
-                printf("\n");
+                printf("\033[0m\n");
             }
         } else {
             char error_msg[100];
             snprintf(error_msg, sizeof(error_msg), "Unexpected opcode received: %s", opcode);
             log_error(error_msg);
-            pop(sm);
             continue;
         }
     }
@@ -412,7 +412,7 @@ int main() {
     printf("version-0.0.1                           \\_\\ \n\n");
 
     while (1) {
-        printf("\033[34;1m:->\033[0m");
+        printf("\033[33;1m:->\033[0m");
         if (fgets(input, sizeof(input), stdin) == NULL) {
             break;
         }
@@ -449,6 +449,7 @@ int main() {
                 }
             } else if (strncmp(input, "PRINT ", 6) == 0) {
                 char* str = input + 6;
+                printf("\033[34;1m"); 
                 for (char* p = str; *p != '\0'; p++) {
                     if (*p == '\\' && *(p + 1) == 'n') {
                         putchar('\n');
