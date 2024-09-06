@@ -28,5 +28,5 @@ SUB
 JUMP.>0 L
 JUMP.=0 end
 CURRENTSTACK main
-end;
+end:
 HALT
