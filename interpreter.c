@@ -25,7 +25,8 @@ typedef struct {
 
 
 void log_error(const char* message) {
-    fprintf(stderr, "Error: %s\n", message);
+    fprintf(stderr, "\033[31;1m| Error: %s\n\033[0m", message);
+
     longjmp(error_jmp_buf, 1);
 }
 //----------------------------------------------------------------------------------------------------------------------------------------
@@ -317,6 +318,7 @@ void interpret(char* program[], int program_size, char* labels[], int label_addr
             char error_msg[100];
             snprintf(error_msg, sizeof(error_msg), "Unexpected opcode received: %s", opcode);
             log_error(error_msg);
+            pop(sm);
             continue;
         }
     }
